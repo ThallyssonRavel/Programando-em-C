@@ -1,11 +1,11 @@
 # Programando-em-C
-<h1 Ola Nerds>
-<p O objetivo desse repositorio é colocar todo o tipo de exercicio em C,
-sendo eles exercicios da faculdade e de cursos. > 
+Ola Nerds
+O objetivo desse repositorio é colocar todo o tipo de exercicio em C,
+sendo eles exercicios da faculdade e de cursos. 
 
-<p Havendo alternancia de niveis, com exercicios mais avançados e alguns mais basicos.>
+Havendo alternancia de niveis, com exercicios mais avançados e alguns mais basicos.
 
---------------------<p Alguns dos exercicios realizados e suas funcionalidades>---------------------------
+Alguns dos exercicios realizados e suas funcionalidades
 1 - Exercicio 1
      - Realizar o calculo da divisao do premio de um concurso
      - Realizar o calculo do salario do trabalhador.
@@ -21,6 +21,6 @@ sendo eles exercicios da faculdade e de cursos. >
      - Apresentar a quantidade de alunos.
      - Apresentar a quantidade de aprovados/reprovados.
      - Apresentar a maior nota e a menor nota.
-------------------------------------------------------------------------------------------------------
+
 
 
