@@ -139,13 +139,13 @@ void converter_minutos(){
         case 1:
             resultado = minutos/60;
             linhas();
-            printf("%i minutos e: %2.f hora(s)\n", minutos,resultado);
+            printf("%i minutos e: %.2f hora(s)\n", minutos,resultado);
             linhas();
             break;
         case 2:
             resultado = minutos*60;
             linhas();
-            printf("%i minutos e: %2.f segundo(s)\n", minutos,resultado);
+            printf("%i minutos e: %.2f segundo(s)\n", minutos,resultado);
             linhas();
             break;
         default:
@@ -173,13 +173,13 @@ void converter_segundos(){
         case 1:
             resultado = segundos/3600;
             linhas();
-            printf("%i segundos e: %2.f hora(s)\n", segundos,resultado);
+            printf("%i segundos e: %.2f hora(s)\n", segundos,resultado);
             linhas();
             break;
         case 2:
             resultado = segundos/60;
             linhas();
-            printf("%i segundos e: %2.f minuto(s)\n", segundos,resultado);
+            printf("%i segundos e: %.2f minuto(s)\n", segundos,resultado);
             linhas();
             break;
         default:
