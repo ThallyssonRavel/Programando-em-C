@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
 void inicio();
 void funcionalidades();
@@ -87,15 +86,20 @@ void menu_converter_segundos(){
 }
 
 void converter_horas(){
-    int escolha, horas, resultado;
-
-    menu_converter_horas();
-    scanf("%i", &escolha);
-    linhas();
-    printf("Digite quantas horas deseja converter\n");
-    linhas();
-    scanf("%i", &horas);
-    system("cls");
+    int escolha, horas;
+    float resultado;
+    do{
+        menu_converter_horas();
+        scanf("%i", &escolha);
+        linhas();
+        printf("Digite quantas horas deseja converter\n");
+        linhas();
+        scanf("%i", &horas);
+        system("cls");
+        if(horas<0){
+           printf("Erro! Nao ha hora(s) negativa(s)!");
+        }
+    }while(horas <0);
 
     switch (escolha){
         case 1:
@@ -116,27 +120,32 @@ void converter_horas(){
 }
 
 void converter_minutos(){
-    int escolha, minutos, resultado;
-
-    menu_converter_minutos();
-    scanf("%i", &escolha);
-    linhas();
-    printf("Digite quantos minutos deseja converter\n");
-    linhas();
-    scanf("%i", &minutos);
-    system("cls");
+    int escolha, minutos;
+    float resultado;
+    do{
+        menu_converter_minutos();
+        scanf("%i", &escolha);
+        linhas();
+        printf("Digite quantos minutos deseja converter\n");
+        linhas();
+        scanf("%i", &minutos);
+        system("cls");
+        if(minutos <0){
+           printf("Erro! Nao ha minuto(s) negativo(s)!");
+        }
+    }while(minutos <0);
 
     switch (escolha){
         case 1:
             resultado = minutos/60;
             linhas();
-            printf("%i minutos e: %i hora(s)\n", minutos,resultado);
+            printf("%i minutos e: %.2f hora(s)\n", minutos,resultado);
             linhas();
             break;
         case 2:
             resultado = minutos*60;
             linhas();
-            printf("%i minutos e: %i segundo(s)\n", minutos,resultado);
+            printf("%i minutos e: %.2f segundo(s)\n", minutos,resultado);
             linhas();
             break;
         default:
@@ -145,27 +154,32 @@ void converter_minutos(){
 }
 
 void converter_segundos(){
-    int escolha, segundos, resultado;
-
-    menu_converter_segundos();
-    scanf("%i", &escolha);
-    linhas();
-    printf("Digite quantas horas deseja converter\n");
-    linhas();
-    scanf("%i", &segundos);
-    system("cls");
+    int escolha, segundos;
+    float resultado;
+    do{
+        menu_converter_segundos();
+        scanf("%i", &escolha);
+        linhas();
+        printf("Digite quantas horas deseja converter\n");
+        linhas();
+        scanf("%i", &segundos);
+        system("cls");
+        if(segundos <0){
+            printf("Erro! Nao ha segundos negativos!");
+        }
+    }while(segundos <0);
 
     switch (escolha){
         case 1:
             resultado = segundos/3600;
             linhas();
-            printf("%i segundos e: %i hora(s)\n", segundos,resultado);
+            printf("%i segundos e: %.2f hora(s)\n", segundos,resultado);
             linhas();
             break;
         case 2:
             resultado = segundos/60;
             linhas();
-            printf("%i segundos e: %i minuto(s)\n", segundos,resultado);
+            printf("%i segundos e: %.2f minuto(s)\n", segundos,resultado);
             linhas();
             break;
         default:
