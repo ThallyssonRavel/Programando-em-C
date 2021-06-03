@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
 void inicio();
 void funcionalidades();
@@ -88,14 +87,19 @@ void menu_converter_segundos(){
 
 void converter_horas(){
     int escolha, horas, resultado;
-
-    menu_converter_horas();
-    scanf("%i", &escolha);
-    linhas();
-    printf("Digite quantas horas deseja converter\n");
-    linhas();
-    scanf("%i", &horas);
-    system("cls");
+    do{
+        menu_converter_horas();
+        scanf("%i", &escolha);
+        linhas();
+        printf("Digite quantas horas deseja converter\n");
+        linhas();
+        scanf("%i", &horas);
+        system("cls");
+        if(horas<0){
+            printf("Erro! Nao existe hora negativa");
+        }
+    }while(horas <0);
+   
 
     switch (escolha){
         case 1:
@@ -117,14 +121,19 @@ void converter_horas(){
 
 void converter_minutos(){
     int escolha, minutos, resultado;
-
-    menu_converter_minutos();
-    scanf("%i", &escolha);
-    linhas();
-    printf("Digite quantos minutos deseja converter\n");
-    linhas();
-    scanf("%i", &minutos);
-    system("cls");
+    do{
+        menu_converter_minutos();
+        scanf("%i", &escolha);
+        linhas();
+        printf("Digite quantos minutos deseja converter\n");
+        linhas();
+        scanf("%i", &minutos);
+        system("cls");
+        if(minutos <0){
+            printf("Erro, nao existe minutos negativos");
+        }
+    }while(minutos <0);
+    
 
     switch (escolha){
         case 1:
@@ -146,14 +155,19 @@ void converter_minutos(){
 
 void converter_segundos(){
     int escolha, segundos, resultado;
-
-    menu_converter_segundos();
-    scanf("%i", &escolha);
-    linhas();
-    printf("Digite quantas horas deseja converter\n");
-    linhas();
-    scanf("%i", &segundos);
-    system("cls");
+    do{
+        menu_converter_segundos();
+        scanf("%i", &escolha);
+        linhas();
+        printf("Digite quantas horas deseja converter\n");
+        linhas();
+        scanf("%i", &segundos);
+        system("cls"); 
+        if(segundos <0){
+            printf("Erro, nao existe segundos negativos");
+        }
+    }while(segundos <0);
+    
 
     switch (escolha){
         case 1:
