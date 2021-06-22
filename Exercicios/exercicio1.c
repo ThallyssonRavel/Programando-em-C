@@ -24,7 +24,7 @@ void menu(){
 void escolha_funcionalidade(int escolha){
 
     int volta, resultado_geral;
-    /*Esta dentro de um ciclo de repetição devido ao caso de o usuario digitar uma alternativa que não 
+    /*Esta dentro de um ciclo de repetição devido ao caso de o(a) usuario(a) digitar uma alternativa que não 
     há no menu*/
     do{
         printf("\n");
