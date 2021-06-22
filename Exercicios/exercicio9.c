@@ -1,29 +1,24 @@
 //Objetivo: Calcular a area de um circulo, sem saber qual é a medida utilizada.
-//Biblio tecas necessarias
 #include <stdio.h>
 #include <stdlib.h>
-//Assinatura dos procedimentos
+
 void calcularArea();
 void continua();
 void linhas();
 
-//Função principal
 int main(void){
-    //Uma pequena incialização
     linhas();
     printf("                           Seja bem vindo(a)\n");
     printf("  Aqui calculamos a area de um circulo, com base no raio, utilizando Pi = 3,14.\n");
     linhas();
-    //Procedimento que calcula a area do circulo
     calcularArea();
 }
-//Procedimento que calcula a area do circulo
+
 void calcularArea(){
     int raio, opcao;
     float area;
     //Loop de repetição caso o(a) usuario(a) queira fazer mais de um calculo de area
     do{
-        //Loop caso o raio seja negativo
         do{
             printf("  Digite o raio do circulo: ");
             scanf("%i", &raio);
@@ -43,12 +38,10 @@ void calcularArea(){
         system("cls");
 
     }while(opcao == 1);
-    //Caso o(a) usuario(a) deseje sair
     printf("  Obrigado e ate logo!");
 
 }
 
-//Procedimento que sabe se continua ou não o programa.
 void continua(){
     int escolha;
     linhas();
