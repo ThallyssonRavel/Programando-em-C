@@ -28,7 +28,7 @@ int main(void){
                 printf(" A temperatura %iC em Celcius e: %iF\n", temperatura[i],conversao);
                 break;
             case 2:
-                printf(" Beleza entao la vamos nos\n");
+                printf(" Beleza entao vamos la\n");
                 printf(" Digite a temperatura que deseja converter\n");
                 scanf("%i", &temperatura[i + 1]);
                 resultado_conversao = ((temperatura[i+1] - 32)*5)/9;
