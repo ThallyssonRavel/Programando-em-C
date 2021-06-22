@@ -12,11 +12,11 @@ int main(void){
          printf("Digite o peso da %i nota\n", i+1);
          scanf("%i", &peso[i]);
          if(nota[i]<0 || nota[i]>10){
-            printf("Erro, digite a nota novamente!\n");
+            printf("Erro! digite a nota novamente!\n");
             scanf("%i", &nota[i]);
          }
          if(peso[i]<0){
-            printf("Erro, o peso tem que ser maior que 0\n");
+            printf("Erro! o peso tem que ser maior que 0\n");
             printf("%i", &peso[i]);
          }
          contador = i+1;
@@ -27,7 +27,7 @@ int main(void){
          pesos = pesos + peso[i];
       }
       if(pesos<0){
-         printf("Erro, incie novamente\n");
+         printf("Erro! incie novamente\n");
          erro = 1;
       }
    }while(erro == 1);
