@@ -32,7 +32,7 @@ void funcionalidades(){
     do{
         printf("\n");
         menu();
-        printf("Digite a funcionalidade desejada\n");
+        printf("Digite a funcionalidade que deseja\n");
         scanf("%i", &opcao);
         switch (opcao){
             case 1:
