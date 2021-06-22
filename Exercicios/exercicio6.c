@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-//Assinatura dos procedimentos.
 void menu();
 void funcionalidades();
 void converter_polegadas();
@@ -11,13 +10,9 @@ void converter_pes();
 void linha();
 
 int main(void){
-    //Procedimento que realiza a função desejada pelo(a) usuario(a).
     funcionalidades();
 }
-
-//Procedimento menu.
 void menu(){
-    //Funcionalidades presentes no programa.
     printf(" -------------  Menu  --------------------\n");
     printf("      1 - Converter polegadas\n");
     printf("      2 - Converter jardas\n");
@@ -29,13 +24,11 @@ void menu(){
 
 void funcionalidades(){
     int i=1, opcao, novamente=0;
-    //Bloco dentro de um laço de repetição caso o(a) usuaria(a) queira voltar ao inicio.
     do{
         menu();
         scanf(" %i", &opcao);
         //Limpa tela por questão de estetica.
         system("cls");
-        //Escolha com as funcionalidades.
         switch (opcao){
             case 1:
                 converter_polegadas();
@@ -54,7 +47,6 @@ void funcionalidades(){
                 i=0;
                 break;
             default:
-                //Caso o(a) usuario(a) digite errado, ira reiniciar o loop.
                 printf(" Opcao invalida, digite novamente\n");
                 scanf("%i", &novamente);
             break;
@@ -81,7 +73,6 @@ void converter_polegadas(){
         linha();
         scanf(" %i", &converter);
         system("cls");
-        //Escolha com cada conversao de acordo com a escolha do(a) usuario(a).
         switch (converter){
             case 1:
                 tamanho_jardas=tamanho_polegadas/36;
@@ -148,7 +139,6 @@ void converter_jardas(){
     }while(i!=0);
 }
 
-//A forma de execução e organização são os mesmos de todos os  procedimentos de conversão.
 void converter_milhas(){
     int tamanho_jardas, converter, tamanho_polegadas, tamanho_milhas, i=1, tamanho_pes;
     linha();
